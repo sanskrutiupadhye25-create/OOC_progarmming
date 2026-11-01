@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a, b, choice;
+cout<< "Enter two numbers: ";
+cin>> a>> b;
+cout<< "\n1. Addition";
+cout<< "\n2. Subtraction";
+cout<< "\n3. multiplication";
+cout<< "\n4. Division";
+cout<< "\nEnter your choice(1-4): ";
+cin>>choice;
+switch(choice)
+{
+case 1:
+cout<<"Addition = "<< a+b;
+break;
+case 2:
+cout<<"Substraction = "<<a-b;
+break;
+case 3:
+cout<<"Multiplication = "<< a*b;
+break;
+case 4:
+cout<<"Division = "<<a/b;
+break;
+default:
+cout<<"Invalid choice!";
+}
+return 0;
+}
